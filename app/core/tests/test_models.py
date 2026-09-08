@@ -4,6 +4,7 @@ Tests for models.
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
+
 class Modeltests(TestCase):
     """Test models."""
 
@@ -40,7 +41,7 @@ class Modeltests(TestCase):
         """Test creating a superuser."""
         user = get_user_model().objects.create_superuser(
           'test@example.com',
-          'test123',  
+          'test123',
         )
 
         self.assertTrue(user.is_superuser)

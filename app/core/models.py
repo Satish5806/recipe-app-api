@@ -3,10 +3,10 @@ Database models.
 """
 from django.db import models
 from django.contrib.auth.models import(
-    AbstractBaseUser,
+    AbstractBaseUser, 
     BaseUserManager,
-    PermissionsMixin,
-)
+    PermissionsMixin, 
+) 
 
 
 class UserManager(BaseUserManager):
